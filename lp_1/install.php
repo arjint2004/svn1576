@@ -2,11 +2,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Install LP MOVIE</title>
-	<link href="assets/css/install.css" rel="stylesheet" />
+	<link href="asset/css/install.css" rel="stylesheet" />
 </head>
 <body>
 	<div id="header">
-		<div id="logo"><img src="assets/img/logo.png" alt="Logo" /></div>
+		<div id="logo"><img src="asset/images/logo.png" alt="Logo" /></div>
 	</div>
 	<div id="content">
 		<?php if(isset($_GET['act'])){?>
@@ -56,8 +56,8 @@
 		</form>
 		<?php } ?>
 	</div>
-	<script type='text/javascript' src='assets/js/jquery.js'></script>
-	<script type='text/javascript' src='assets/js/jquery.validate.min.js'></script>
-	<script type='text/javascript' src='assets/js/install.js'></script>
+	<script type='text/javascript' src='asset/js/jquery.js'></script>
+	<script type='text/javascript' src='asset/js/jquery.validate.min.js'></script>
+	<script type='text/javascript' src='asset/js/install.js'></script>
 </body>
 </html>

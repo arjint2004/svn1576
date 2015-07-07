@@ -57,20 +57,25 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-			<a class="navbar-brand" href="<?php echo $TopMovieID[$tm]; ?>"><?php echo $Title; ?></a>
+			  
+			  <a class="navbar-brand" href="<?php echo $TopMovieID[$tm]; ?>"><?php echo $Title; ?></a>
+			  
             </div>
           </div>
         </div>
     </div>
 	<div class="container">
-	<!--<div class="full-width">-->
-		<div class="row">			
+	<div class="full-width">
+		<!--<div class="row">-->			
 			<div class="col-sm-6 col-md-4">	
 					<div class="row">
 					<table class="tablemovieasb">
 					<thead>
 						<tr>
-							<th colspan="2"><h4>Details</h4></th>
+							<th colspan="2">
+							<img src="asset/images/logo.png" alt="Logo" />
+							<h4>Details</h4>
+							</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -135,7 +140,7 @@
 				<div class="row">
 				<div class="thumbnail">
 					<div class="view view-third">
-						<img class="" src="<?php if($Backdrop==FALSE){ echo 'assets/img/blank.jpg'; }else{ echo $Backdrop; } ?>"  alt="<?php echo $Title; ?>">
+						<img class="" src="<?php if($Backdrop==FALSE){ echo 'asset/images/blank.jpg'; }else{ echo $Backdrop; } ?>"  alt="<?php echo $Title; ?>">
 						<div class="timeline"><img  src="asset/images/timeline.png"  alt="<?php echo $Title; ?>">
 							<div class="time-duration">01:55</div>
 						</div>
@@ -165,14 +170,14 @@
 							</div>
 							<div class="row">
 								<div class="col-sm-5 col-md-6">
-									<button class="btn btn-primary btn_med" onclick="window.location.assign('<?php echo $aff_link; ?>')" type="button">REGISTER</button>
+									<button class="btn btn-success btn_med" onclick="window.location.assign('<?php echo $aff_link; ?>')" type="button">REGISTER</button>
 								</div>
 								<div class="col-sm-5 col-md-6">
 									<button class="btn btn-primary btn_med" onclick="window.location.assign('<?php echo $aff_link; ?>')" type="button">LOGIN</button>
 								</div>
 							</div>
 							<div class="row">
-								<h3>FREE TRIAL valid until Jul 22, 2015 (use coupon code: 84N64L8R0)</h3>
+								<h3>FREE TRIAL valid until <?php echo $DateTrial; ?> (use coupon code: 84N64L8R0)</h3>
 							</div>
 						</div>
 					</div>

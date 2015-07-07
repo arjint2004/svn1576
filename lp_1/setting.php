@@ -12,7 +12,7 @@ $FunkPlay142 = 'http://go.vid-id.org/?a=admin&s=kary2'; //FunkPlay 142
 $FunkPlay143 = 'http://go.vid-id.org/?a=admin&s=kary2'; //FunkPlay 143
 
 //DATE TRIAL COUPON (day)
-$TrialDate = '16';
+$TrialDate = 'Jul 22, 2015';
 
 //Default ID imdb
 $DefaultIDImdb = '0317705';
