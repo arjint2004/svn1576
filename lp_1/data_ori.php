@@ -237,9 +237,9 @@ $Content = json_decode(file_get_contents('http://idmovapi.com/'.$imdbID), true);
 $XGenre = explode("&#44; ", $Content['GENRE']);
 $GenreMovie = $XGenre[0];
 $GenreRandom = json_decode(file_get_contents('http://idmovapi.com/genre/'.$GenreMovie.'/random'), true);
- echo "<pre>";
+ // echo "<pre>";
  // print_r($GenreRandom);
- echo "</pre>";
+ // echo "</pre>";
 	if($GenreRandom['total movie'] < 10){
 		$CountTopMovie = $GenreRandom['total movie'];
 	}else{

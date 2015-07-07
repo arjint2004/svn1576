@@ -1,0 +1,67 @@
+div.nopadding{
+	padding: 0;
+}
+img.movieasbframe{
+	padding: 0;
+	border: 5px solid #ccc;
+}
+div.movieasb  .panel-body{
+	width:100%;
+	padding:0;
+	border: 5px solid #ccc;
+}
+div.movieasb  img{
+	width:100%;
+	border: 5px solid #ccc;
+}
+
+table.tablemovieasb tr td.title{
+	font-weight: bold;
+	text-align: left;
+	width: 25%;
+	font-size:13px;
+}
+table.tablemovieasb tr td.desc{
+	
+	text-align: left;
+}
+.row {
+  padding: 0;
+  
+  margin:10px 0 ;
+}
+.titasb{
+	font-size:18px;
+}
+.view {
+  margin-bottom: 0;
+}
+	.posterasb{
+		display:none;
+	}
+@media (min-width: 768px) {
+	.posterasb{
+		display:block;
+	}
+}
+.panel-body {
+    padding: 8px;
+}
+.panel-default {
+  margin-top:25px;
+}
+.timeline {
+	/*background: rgba(0, 0, 0, 0) url("../images/timeline.png") no-repeat scroll 0 center;*/
+	height: 27px;
+	left: 0;
+	position: absolute;
+	top: 93.5%;
+	width: 100%;
+}
+.time-duration {
+	color: #fff;
+	font-size: 11px;
+	left: 89%;
+	position: absolute;
+	top: 94%;
+}

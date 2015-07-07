@@ -1,4 +1,4 @@
-<?php include ('data_ori.php'); ?>
+<?php error_reporting(0);include ('data_ori.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>Casava Responsive Design</title>
+    <title><?php echo $Title; ?></title>
 
     <link href="asset/css/animations.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
@@ -25,6 +25,7 @@
     <link href="asset/style.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="asset/css/slideshow.css" />
 	<link rel="stylesheet" type="text/css" href="asset/css/lightbox.css" />
+	<link rel="stylesheet" type="text/css" href="asset/css/lp.css" />
 	
     <script src="asset/js/owl.carousel.js"></script>
 	<script src="asset/js/script.js"></script>
@@ -61,32 +62,100 @@
           </div>
         </div>
     </div>
-	<!--nav bar-->
-	<div class="row animated fadeInUp" style="opacity: 1;">
-
-	</div>
-	<div class="full-width">
-		<div class="row ">
-		<div class="tit_center">
-			<h3><?php echo $GenreMovie; ?> Movie</h3>
-		</div>
-			<?php for($tm=0;$tm<$CountTopMovie;$tm++){?>
-			<div class="col-sm-per6 no_padding no_margin">	
-                <div class="no_margin view view-tenth">
-                    <img  src="<?php echo $TopBackdrop[$tm]; ?>"  alt="<?php echo $TopMovieID[$tm]; ?>"/>
-                    <div class="mask">
-                        <a class="info" href="<?php echo $TopMovieID[$tm]; ?>"><?php echo $TopMovieTitle[$tm]; ?></a>
-                        <p  href="<?php echo $TopBackdrop[$tm]; ?>"  data-toggle="lightbox" data-gallery="imagesizes"><?=$TopDesc[$tm]?></p>
-                    </div>
-                </div>
-            </div>
-			<? } ?>
-			
+	<div class="container">
+	<!--<div class="full-width">-->
+		<div class="row">			
+			<div class="col-sm-6 col-md-4">	
+					<div class="row">
+					<table class="tablemovieasb">
+					<thead>
+						<tr>
+							<th colspan="2"><h4>Details</h4></th>
+						</tr>
+					</thead>
+					<tbody>
+							<tr>
+							<td class="title">Title:</td>
+ 								<td class="desc"><?php echo $Title; ?></td>
+ 							</tr>
+ 							<tr>
+ 								<td class="title">Genre:</td>
+ 								<td class="desc"><?php echo $Genre; ?></td>
+ 							</tr>
+ 							<tr> 
+ 								<td class="title">Director:</td>
+ 								<td class="desc"><?php echo $Director; ?></td>
+ 							</tr>
+ 							<tr> 
+ 								<td class="title">Star:</td>
+ 								<td class="desc"><?php echo $Star; ?></td>
+ 							</tr>
+ 							<tr>
+ 								<td class="title">Country:</td>
+ 								<td class="desc"><?php echo $Country; ?></td>
+ 							</tr>
+ 							<tr>
+ 								<td class="title">Language:</td>
+ 								<td class="desc"><?php echo $Language; ?></td>
+ 							</tr>
+ 							<tr>
+ 								<td class="title">Runtime:</td>
+ 								<td class="desc"><?php echo $Runtime; ?></td>
+ 							</tr>
+ 							<tr>
+ 								<td class="title">Release:</td>
+ 								<td class="desc"><?php echo $Release; ?></td>
+ 							</tr>
+					</tbody>
+				</table>
+				</div>
+				<?php if($Poster == TRUE ){?>
+				<!--<div class="col-md-12 movieasb" >
+					<div class="panel-body">
+						<img  style="width:100%;" src="<?php echo $Poster; ?>" alt="<?php echo $Title; ?>">
+					</div>			
+				</div>-->
+				<div class="row">
+				<div class="col-md-12 nopadding posterasb">
+				  <div class="thumbnail">
+					<div class="view view-third">
+						<img class="movieasbframe" src="<?php echo $Poster; ?>" alt="<?php echo $Title; ?>">
+						<div class="mask">
+							<a class="info" href="#"><?php echo $Title; ?></a>
+							<p><?php echo $Description; ?></p>
+						</div>
+					</div>
+				  </div>
+				</div>
+				</div>
+				
+				<? } ?>				
+			</div>
+			<div class="col-sm-12 col-sm-6 col-lg-8 nopadding">
+				<div class="row">
+				<div class="thumbnail">
+					<div class="view view-third">
+						<img class="" src="<?php if($Backdrop==FALSE){ echo 'assets/img/blank.jpg'; }else{ echo $Backdrop; } ?>"  alt="<?php echo $Title; ?>">
+						<div class="timeline"><img  src="asset/images/timeline.png"  alt="<?php echo $Title; ?>"></div>
+						<div class="time-duration">01:55</div>
+						<div class="mask">
+							<a class="info" href="#"><?php echo $Title; ?></a>
+							<p><?php echo $Description; ?></p>
+						</div>
+					</div>
+				</div>	
+				</div>	
+				
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Storyline</h3>
+						<?php echo $Description; ?> 					
+					</div>
+				</div>
+				<? include('addc.php');?>
+			</div>
 		</div>
 	</div><!--full_width-->
-
-  
-    </div><!-- /.container -->
 	<footer>
 
 	</footer>

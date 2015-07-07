@@ -41,7 +41,7 @@ ul li {
 .full-width {
   background: none repeat scroll 0 0 #efefef;
   width: 100%;
-  margin:40px 0 40px 0
+  /*margin:40px 0 40px 0*/
 }
 .full-width2 {
   background: none repeat scroll 0 0 #ffffff;
