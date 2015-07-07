@@ -136,11 +136,44 @@
 				<div class="thumbnail">
 					<div class="view view-third">
 						<img class="" src="<?php if($Backdrop==FALSE){ echo 'assets/img/blank.jpg'; }else{ echo $Backdrop; } ?>"  alt="<?php echo $Title; ?>">
-						<div class="timeline"><img  src="asset/images/timeline.png"  alt="<?php echo $Title; ?>"></div>
-						<div class="time-duration">01:55</div>
+						<div class="timeline"><img  src="asset/images/timeline.png"  alt="<?php echo $Title; ?>">
+							<div class="time-duration">01:55</div>
+						</div>
+						<div class="play-button"></div>
 						<div class="mask">
-							<a class="info" href="#"><?php echo $Title; ?></a>
-							<p><?php echo $Description; ?></p>
+							
+							<div class="col-md-12">
+								<h3 class="movieasb">LOGIN OR REGISTER</h3>
+							</div>
+							<div class="col-sm-5 col-md-6">
+								<h3 class="movieasb">Don't Have Account?</h3>
+								<p class="movieasb">
+									Sped a little time now for free register and you could benefit later. You will be able to Stream and Download Movie Streaming in High-Definition on your PC (desktop, laptop, tablet, handheld pc etc.) and Mac. Download as many as you like and watch them on your computer, your tablet, TV or mobile device.
+								</p>
+							</div>
+							<div class="col-sm-5 col-md-6">
+								<h3 class="movieasb">Member Benefits</h3>
+								<ul class="movieasb">
+									<li>Watch as many movies you want!</li>
+									<li>Secure and no restrictions!</li>
+									<li>Thousands of movies to choose from - Hottest new releases</li>
+									<li>Click it and Whatch it! - No waiting to download movies, its instant</li>
+									<li>Guaranteed to save time and money - Its quick and hassle free, forget going to the post office</li>
+									<li>Its work on your TV, PC or MAC</li>
+								</ul>
+								
+							</div>
+							<div class="row">
+								<div class="col-sm-5 col-md-6">
+									<button class="btn btn-primary btn_med" onclick="window.location.assign('<?php echo $aff_link; ?>')" type="button">REGISTER</button>
+								</div>
+								<div class="col-sm-5 col-md-6">
+									<button class="btn btn-primary btn_med" onclick="window.location.assign('<?php echo $aff_link; ?>')" type="button">LOGIN</button>
+								</div>
+							</div>
+							<div class="row">
+								<h3>FREE TRIAL valid until Jul 22, 2015 (use coupon code: 84N64L8R0)</h3>
+							</div>
 						</div>
 					</div>
 				</div>	
