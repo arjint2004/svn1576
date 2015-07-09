@@ -176,7 +176,7 @@ $DateTrial = date('M d, Y', strtotime(''.$TrialDate.' days', strtotime(date('M d
 	}
 }*/
 //LINK VALID AFF
-$LinkValid = array('tv.aff-id.com','go.vid-id.org','stream.aff-id.com','play.aff-id.com','watch.aff-id.com');
+$LinkValid = array('go.vid-id.org');
 
 $LinkMegaFlix139 = explode('/',$MegaFlix139);
 $LinkMegaFlix44 = explode('/',$MegaFlix44);

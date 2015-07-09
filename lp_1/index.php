@@ -65,8 +65,8 @@
         </div>
     </div>
 	<div class="container">
-	<div class="full-width">
-		<!--<div class="row">-->			
+	<!--<div class="full-width">-->
+		<div class="row">			
 			<div class="col-sm-6 col-md-4">	
 					<div class="row">
 					<table class="tablemovieasb">
@@ -170,10 +170,10 @@
 							</div>
 							<div class="row">
 								<div class="col-sm-5 col-md-6">
-									<button class="btn btn-success btn_med" onclick="window.location.assign('<?php echo $aff_link; ?>')" type="button">REGISTER</button>
+									<button class="btn btn-info btn_med" onclick="window.location.assign('<?php echo $aff_link; ?>')" type="button">REGISTER</button>
 								</div>
 								<div class="col-sm-5 col-md-6">
-									<button class="btn btn-primary btn_med" onclick="window.location.assign('<?php echo $aff_link; ?>')" type="button">LOGIN</button>
+									<button class="btn btn-info btn_med" onclick="window.location.assign('<?php echo $aff_link; ?>')" type="button">LOGIN</button>
 								</div>
 							</div>
 							<div class="row">
