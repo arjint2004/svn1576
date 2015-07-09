@@ -5233,7 +5233,7 @@ ul#navigation li.mega-menu__nav-item:hover:before {
   position: relative;
   font-size: 13px;
   color: #fe505a;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
   padding-left: 20px;
 }
 .movie .movie__time:before {
@@ -8349,7 +8349,7 @@ ul#navigation li.mega-menu__nav-item:hover:before {
   background-image: url("../images/components/wave-main.svg");
 }
 .movie--preview .movie__option {
-  line-height: 25px;
+  line-height: 21px;
 }
 .movie--preview .time-select {
   display: none;

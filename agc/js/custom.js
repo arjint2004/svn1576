@@ -1033,7 +1033,7 @@ function init_MovieList () {
 				//select
                 $(".select__sort").selectbox({
                     onChange: function (val, inst) {
-
+						$(inst.input[0]).parent('form').submit();
                         $(inst.input[0]).children().each(function(item){
                             $(this).removeAttr('selected');
                         })

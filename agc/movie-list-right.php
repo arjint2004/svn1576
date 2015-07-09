@@ -1,8 +1,7 @@
-
 <!doctype html>
 <html>
 
-<!-- Mirrored from amovie.designzway.com/movie-list-full.html by HTTrack Website Copier/3.x [XR&CO'2004], Wed, 08 Jul 2015 06:13:42 GMT -->
+<!-- Mirrored from amovie.designzway.com/movie-list-right.html by HTTrack Website Copier/3.x [XR&CO'2004], Wed, 08 Jul 2015 06:13:42 GMT -->
 <head>
 	<!-- Basic Page Needs -->
         <meta charset="utf-8">
@@ -44,38 +43,24 @@
 </head>
 
 <body> 
-
-        <? include("header.php")?>
-        <!-- Search bar 
-        <div class="search-wrapper">
-            <div class="container container--add">
-                <form id='search-form' method='get' class="search">
-                    <input type="text" class="search__field" placeholder="Search">
-                    <select name="sorting_item" id="search-sort" class="search__sort" tabindex="0">
-                        <option value="1" selected='selected'>By title</option>
-                        <option value="2">By year</option>
-                        <option value="3">By producer</option>
-                        <option value="4">By title</option>
-                        <option value="5">By year</option>
-                    </select>
-                    <button type='submit' class="btn btn-md btn--danger search__button">search a movie</button>
-                </form>
-            </div>
-        </div>-->
+<? include("header.php")?>
         
         <!-- Main content -->
         <section class="container">
-            <div class="col-sm-12">
-                <? include('movielist.php');?>
+            <h2 class="page-heading heading--outcontainer">Movies</h2>
+
+            <div class="col-sm-8 col-md-9 col-sm-push-4 col-md-push-3">
+				<? include('movielist.php');?>
             </div>
+                    
+            <? include('sidebar.php');?>
 
         </section>
-        
         <? include('footer.php');?>
 
 	<!-- JavaScript-->
         <!-- jQuery 1.9.1--> 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="../ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/external/jquery-1.10.1.min.js"><\/script>')</script>
         <!-- Migrate --> 
         <script src="js/external/jquery-migrate-1.2.1.min.js"></script>
@@ -108,5 +93,5 @@
 
 </body>
 
-<!-- Mirrored from amovie.designzway.com/movie-list-full.html by HTTrack Website Copier/3.x [XR&CO'2004], Wed, 08 Jul 2015 06:13:42 GMT -->
+<!-- Mirrored from amovie.designzway.com/movie-list-right.html by HTTrack Website Copier/3.x [XR&CO'2004], Wed, 08 Jul 2015 06:13:42 GMT -->
 </html>
