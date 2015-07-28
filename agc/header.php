@@ -1,4 +1,4 @@
-    <? include('setting.php');?>
+
 	<div class="wrapper">
         <!-- Banner 
         <div class="banner-top">
@@ -16,7 +16,7 @@
                 <!-- Main website navigation-->
                 <nav id="navigation-box">
                     <!-- Toggle for mobile menu mode -->
-                    <a href="#" id="navigation-toggle">
+                    <a href="<?=base_url();?>" id="navigation-toggle">
                         <span class="menu-icon">
                             <span class="icon-toggle" role="button" aria-label="Toggle Navigation">
                               <span class="lines"></span>

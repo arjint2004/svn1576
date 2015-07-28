@@ -1,3 +1,8 @@
+				<? 	$genre=$agc->genre;
+					$datamovie=$agc->movielist();
+					$page=$agc->pagelist;
+					//pr($datamovie);
+				?>
 				<div class="select-area">
 			        <!--<div class="datepicker">
                       <span class="datepicker__marker"><i class="fa fa-calendar"></i>Date</span>
@@ -65,18 +70,18 @@
                             <p class="movie__option"><strong>Release date: </strong>
 							<?
 							$exd=explode("-",$datamovies['RELEASE DATE']);
-							echo date("M-d-Y", mktime(0, 0, 0, $exd[2], $exd[1], $exd[0]));
-							
+							 echo date("M-d-Y", mktime(0, 0, 0, $exd[1], $exd[2], $exd[0]));
+							//echo $datamovies['RELEASE DATE'];
 							?>
 							</p>
                             <p class="movie__option"><strong>Director: </strong><a href="#"><?=$datamovies['DIRECTOR']?></p>
                             <p class="movie__option"><strong>Actors: </strong><?=$datamovies['STAR']?></p>
                             <p class="movie__option"><strong>ID IMDB: </strong><?=$datamovies['ID IMDB']?></p>
                             <p class="movie__option"><strong>ID TMDB: </strong><?=$datamovies['ID TMDB']?></p>
-                            <!--<p class="movie__option"><strong>Description: </strong><?=$datamovies['DESCRIPTION']?></p>-->
+                            <!--<p class="movie__option"><strong>Description: </strong><?//=$datamovies['DESCRIPTION']?></p>-->
 
                             <div class="movie__btns">
-                                <a href="#" class="btn btn-md btn--warning">Detail<span class="hidden-sm"> Or View Trailer</span></a>
+                                <a href="movie-page-right.php?idmov=<?=$datamovies['ID IMDB']?>" class="btn btn-md btn--warning">Detail<span class="hidden-sm"></span></a>
                                 <!--<a href="#" class="watchlist">Add to watchlist</a>-->
                             </div>
 
@@ -90,7 +95,7 @@
 
                     <div class="clearfix"></div>
                     
-                    <!-- Time table (choose film start time)-->
+                    <!-- Time table (choose film start time)
                     <div class="time-select">
                         <div class="time-select__group group--first">
                             <div class="col-sm-4">
@@ -159,7 +164,7 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- end time table-->
+                     end time table-->
 
                 </div>
                 <!-- end movie preview item -->

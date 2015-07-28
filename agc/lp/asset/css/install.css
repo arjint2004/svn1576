@@ -1,0 +1,65 @@
+/*------------------------- Layout styles ------------------------*/
+body {
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+}
+a {
+	outline:none;
+}
+.clear {
+	clear: both;
+}
+/*------------------------- Header ---------------------------*/
+#header {
+	height:100px;
+	margin:15px 0 0;
+}
+#header #logo {
+	margin:auto;
+	padding:50px 0 0;
+	width:160px;
+}
+/*------------------------- Content ---------------------------*/
+#content {
+	width:500px;
+	margin:50px auto;
+	color:#535353;
+}
+#content #form-install{
+	margin:10px 0;
+}
+#content #form-install label {
+	width:150px;
+	height:30px;
+	display:block;
+	float:left;
+	padding:5px 0;
+}
+#content #form-install .input {
+	width: 450px;
+	height:30px;
+	color:#535353;
+	font-size:15px;
+	border:1px solid #9a9a9a;
+	padding: 0 10px 0 10px;
+}
+#content #form-submit{
+	width:450px;
+	text-align:right;
+}
+#content #form-submit .submit {
+	color:#535353;
+	font-size:14px;
+	border:1px solid #9a9a9a;
+	cursor: pointer;
+	padding:15px;
+}
+#content #warning{
+	padding:20px;
+	border:1px solid #9a9a9a;
+	text-align:center;
+	font-size:12px;
+}
+#content #warning .button{
+	cursor: pointer;
+}
