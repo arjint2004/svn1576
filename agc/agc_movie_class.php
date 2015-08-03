@@ -40,7 +40,7 @@ class agc {
 		}
 		if(isset($_GET['years'])){
 			$datamovie=json_decode(file_get_contents('http://idmovapi.com/years/'.$_GET['years'].'/'.$page.'/random'),true);
-			echo 'http://idmovapi.com/years/'.$_GET['years'].'/'.$page.'/random';
+			//echo 'http://idmovapi.com/years/'.$_GET['years'].'/'.$page.'/random';
 		}elseif(isset($_GET['genre'])){
 			$datamovie=json_decode(file_get_contents('http://idmovapi.com/genre/'.$_GET['genre'].'/'.$page.'/random'),true);
 		}else{
