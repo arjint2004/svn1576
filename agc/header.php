@@ -9,7 +9,7 @@
         <header class="header-wrapper">
             <div class="container">
                 <!-- Logo link-->
-                <a href='index-2.html' class="logo">
+                <a href='<?=base_url();?>' class="logo">
                     <img alt='logo' src="images/logo.png">
                 </a>
                 
@@ -25,7 +25,7 @@
                     </a>
                     
                     <!-- Link navigation -->
-                    <ul id="navigation">
+                    <!--<ul id="navigation">
                         <li>
                             <span class="sub-nav-toggle plus"></span>
                             <a href="#">Pages</a>
@@ -135,7 +135,7 @@
                                       </li>
                                </ul>
                         </li>
-                    </ul>
+                    </ul>-->
                 </nav>
                 
                 <!-- Additional header buttons / Auth and direct link to booking

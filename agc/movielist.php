@@ -177,7 +177,9 @@
                 
                 <div class="coloum-wrapper">
                     <div class="pagination paginatioon--full">
+							<? if($page-1>0){?>
                             <a href='<?=base_url();?>?page=<?=$page-1?>' class="pagination__prev">prev</a>
+							<? } ?>
                             <a href='<?=base_url();?>?page=<?=$page+1?>' class="pagination__next">next</a>
                     </div>
                 </div>

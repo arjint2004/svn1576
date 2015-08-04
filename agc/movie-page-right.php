@@ -1,4 +1,4 @@
-<? include('head.php');
+<? include('head.php');//pr(base_url());die();
 	$detailmovie=$agc->getMovieById($_GET['idmov']);
 	$top=$agc->getTopMovie();
 	//pr($detailmovie);

@@ -1,6 +1,18 @@
 <?php
 function base_url($data=''){
-	return $_SERVER['PHP_SELF'];
+	$file = $_SERVER["SCRIPT_NAME"];
+	$break = Explode('/', $file);
+	$pfile = $break[count($break) - 1];
+
+	//pr($_SERVER);
+	if(isset($_SERVER['HTTPS'])){
+        $protocol = ($_SERVER['HTTPS'] && $_SERVER['HTTPS'] != "off") ? "https" : "http";
+    }
+    else{
+        $protocol = 'http';
+    }
+	return ''.$protocol.'://'.str_replace($pfile,'',$_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF']).$data;
+	//return 'http://webdevel/indoCPA/agc/';
 }
 function pr($data=array()){
 	echo "<pre>";
